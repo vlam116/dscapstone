@@ -1,10 +1,5 @@
-library(parallel);library(doParallel);library(tidytext);library(dplyr);library(ggplot2);library(lexRankr)
+library(tidytext);library(dplyr);library(ggplot2);library(lexRankr)
 library(quanteda);library(tidyr)
-
-cluster = makeCluster(detectCores()-1)
-registerDoParallel(cluster)
-stopCluster(cluster)
-registerDoSEQ()
 
 ### TEXT CLEANING *** CREATING CORPUS *** TOKENIZING TEXT *** GENERATING NGRAMS ###
 
